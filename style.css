@@ -1,0 +1,126 @@
+/*Reset CSS*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Style Script', cursive;
+    color: rgb(43 26 42);
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    background-color: #0b1522;
+}
+
+.cap {
+    position: relative;
+    text-align: center;
+    font-size: 30px;
+}
+
+.cap:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: orange;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+
+.line-text {
+    display: inline-block;
+    background-color: #0b1522;
+    color: white;
+    padding: 20px 10px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.me {
+    font-size: 150px;
+    display: inline-block;
+    width: 144px;
+    padding-left: 10px;
+    top: 0;
+    left: 0;
+}
+
+.hai {
+    font-size: 150px;
+    display: inline-block;
+    width: 182px;
+    float: right;
+    padding-right: 10px;
+}
+
+.ngan {
+    
+    font-size: 150px;
+    display: inline-block;
+    width: 144px;
+    padding-left: 10px;
+    top: 0;
+    left: 0;
+    
+}
+
+.you {
+    font-size: 150px;
+    display: inline-block;
+    width: 182px;
+    float: right;
+    padding-right: 10px;
+
+}
+
+
+.box {
+    margin: auto;
+    position: relative;
+    border-radius: 200px 200px 0 0;
+}
+
+
+.heart {
+    position: relative;
+    width: 100px;
+    height: 160px;
+    background: #f20044;
+    transform: rotate(45deg);
+    box-shadow: -10px 10px 90px #f20044;
+    animation: heart 0.7s linear infinite;
+}
+
+@keyframes heart {
+    0%{
+        transform: rotate(45deg) scale(1.07);
+    }
+    80%{
+        transform: rotate(45deg) scale(1.0);
+    }
+    100%{
+        transform: rotate(45deg) scale(1.08);
+    }
+}
+
+.heart:before {
+    content: "";
+    position: absolute;
+    background-color: #f20044;
+    width: 100px;
+    height: 160px;
+    transform: rotate(-90deg);
+    box-shadow: -10px 10px 90px #f20044;
+    left: -30px;
+    top: 30px;
+    border-radius: 50px;
+}
+
